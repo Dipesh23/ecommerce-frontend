@@ -13,7 +13,7 @@
 
     }
     >h1{
-        @include heading(1pxx);
+        @include heading(1px);
         margin-top: 3rem;
         @include flex(row, space-between , center);
     }

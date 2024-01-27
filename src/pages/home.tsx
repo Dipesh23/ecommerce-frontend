@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom'
-import ProductCard from '../components/product-cart'
+import ProductCard from '../components/product-card'
 
 const Home = () => {
   const addToCartHandler =()=>{}
