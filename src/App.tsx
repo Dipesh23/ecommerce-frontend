@@ -3,11 +3,14 @@ import { lazy, Suspense } from "react";
 import Loader from "./components/loader";
 import Header from "./components/header";
 
+
 const Home = lazy(() => import("./pages/home"));
 const Search = lazy(() => import("./pages/search"));
 const Cart = lazy(() => import("./pages/cart"));
 const Shipping = lazy(() => import("./pages/shipping"));
 const Login = lazy(() => import("./pages/login"));
+const Orders = lazy(() => import("./pages/orders"));
+
 
 //Admin Routes impoeting
 const Dashboard = lazy(() => import("./pages/admin/dashboard"));
@@ -45,6 +48,7 @@ const App = () => {
           //logged-in user routes
           <Route>
             <Route path="/shipping" element={<Shipping />} />
+            <Route path="/orders" element={<Orders/>} />
           </Route>
           {/*Admin Routes*/}
           <Route
