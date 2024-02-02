@@ -8,7 +8,7 @@ const Login = () => {
   return (
     <div className='login'>
         <main>
-            <h1 className='heading'>Login </h1>
+            <h1 className='heading'>Login</h1>
             <div>
                 <label>Gender</label>
                 <select value={gender} onChange={(e)=>setGender(e.target.value)}>
